@@ -17,7 +17,7 @@ class ItemController:
         # 1. Cria um objeto do modelo
         new_item = Item(nome=nome, descricao=descricao, quantidade=quantidade)
         
-        # 2. Passa o objeto para a camada de acesso a dados
+        # 2. Passa o objeto para camada de acesso a dados
         db.create_item(new_item)
         
         # 3. Limpa o cache para que a lista seja atualizada na próxima leitura
